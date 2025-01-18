@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マッスルにしマッスル</title>
+    <meta name="description" content="
+        マの付いた文章を全部マッスルにしマッスル
+    ">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>マの付いた文章を全部マッスルにしマッスル</h1>
+    <label for="in">ここに入力</label>
+    <textarea id="in" class="inputArea" rows="3"
+        placeholder="ま、マッスル&#13;ここに文章を入力します&#13;よろしくお願いしまする&#13;ママーー！！"></textarea>
+    <!--
+ま、マッスル
+ここに文章を入力します
+よろしくお願いしまする
+ママーー！！
+    -->
+    <label for="out">ここが出力</label>
+    <textarea id="out" class="outputArea" rows="3"
+        placeholder="マッスル、マッスル&#13;ここに文章を入力しマッスル&#13;よろしくお願いしマッスル&#13;マッスルマーッスルー！！" readonly></textarea>
+    <p style="display: block; text-align: right; margin-top: 0; margin-right: 3%;"><button
+            onclick="clipboardCopy()">Copy</button></p>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
